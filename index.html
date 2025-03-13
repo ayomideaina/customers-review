@@ -5,30 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="body-content">
         <h2 class="C-review">Customer Reviews</h2>
-        <form id="reviewForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required><br><br>
-            
-            <label for="rating">Rating:</label>
-            <select id="rating" required>
-                <option value="">Select Rating</option>
-                <option value="1">1 - Poor</option>
-                <option value="2">2 - Fair</option>
-                <option value="3">3 - Good</option>
-                <option value="4">4 - Very Good</option>
-                <option value="5">5 - Excellent</option>
-            </select><br><br>
-            
-            <label for="comment">Comment:</label><br>
-            <textarea id="comment" required></textarea><br><br>
-            
-            <button type="submit">Submit Review</button>
-        </form>
-        
+        <fieldset>
+            <form id="reviewForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br><br>
+                <label for="rating">Rating:</label>
+                <select id="rating" required>
+                    <option value="">Select Rating</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select><br><br>
+                
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" cols="30"rows="5" required></textarea><br><br>
+                <input class="button" type="submit" value="Submit review">
+            </form>
+        </fieldset>
         <h3>Reviews:</h3>
         <div id="reviews"></div>
     </section>
