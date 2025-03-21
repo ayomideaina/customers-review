@@ -5,9 +5,9 @@ body {
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
     font-style: normal;
 }
 #reviewForm{
@@ -16,6 +16,7 @@ body {
 fieldset{
     border: 2px solid #cccc;
     background-color: #cccc;
+    border-radius: 5px;
 }
 .C-review{
     text-align: center;
@@ -23,6 +24,7 @@ fieldset{
 input{
     padding: 8px 15px;
     border-radius: 5px;
+    border: none;
 }
 #rating{
     padding: 5px;
